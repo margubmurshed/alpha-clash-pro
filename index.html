@@ -13,6 +13,7 @@
 <body>
     <div
         class="bg-[#1E1E1E] min-h-screen bg-[url('./images/background.png')] bg-center bg-no-repeat flex flex-col justify-center items-center">
+        <!-- home section start-->
         <section id="home-section" class="flex flex-col items-center gap-3 text-center">
             <h1 class="text-white uppercase text-9xl font-anton">Alphabet Clash</h1>
             <p class="text-white font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
@@ -20,12 +21,15 @@
                 class="bg-rose-500 font-semibold text-white border px-14 py-4 rounded-full border-2 border-rose-500 hover:text-rose-500 hover:bg-white  transition mt-10" onclick="play()">Play
                 Now</button>
         </section>
+        <!-- home section end-->
+        <!-- playground section start -->
         <section id="playground-section" class="hidden">
-            <!-- screen -->
+            <!-- screen start-->
             <div
                 class="artboard artboard-horizontal phone-6 border-8 border-[#010313CC] rounded-md bg-[#FFFFFFB3] mb-10 flex justify-center items-center">
                 <p id="random-alphabet-show" class="text-9xl font-bold uppercase">Y</p>
             </div>
+            <!-- screen end-->
             <!-- keyboard start -->
             <div class="space-y-3">
                 <div class="my-1 flex w-full justify-center gap-3">
@@ -63,7 +67,7 @@
                 </div>
             </div>
             <!-- keyboard end -->
-            <!-- life credit -->
+            <!-- life credit start -->
             <div class="flex flex-col md:flex-row justify-between mt-10 font-anton font-poppins">
                 <button class="btn btn-secondary">
                     Life
@@ -76,7 +80,10 @@
                     1
                 </button>
             </div>
+            <!-- life credit end -->
         </section>
+        <!-- playground section end -->
+         <!-- score section start -->
         <section id="score-section" class="score hidden">
             <div class="text-center bg-purple-600 p-10 rounded-md font-poppins relative">
                 <div class="z-10 relative">
@@ -87,6 +94,7 @@
                 <img src="./images/glow-shape.svg" alt="" class="absolute top-0 left-0 h-full z-0">
             </div>
         </section>
+        <!-- score section end -->
     </div>
     <script src="/js/script.js"></script>
     <script src="/js/utility.js"></script>
