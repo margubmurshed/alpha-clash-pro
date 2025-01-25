@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Clash - Play the game</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.2/daisyui.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
     <div
         class="bg-[#1E1E1E] h-screen bg-[url('./images/background.png')] bg-center bg-no-repeat flex flex-col justify-center items-center">
-        <div class="hidden flex flex-col items-center gap-3 text-center">
-            <h1 class="text-white uppercase text-9xl  font-anton">Alphabet Clash</h1>
+        <div class="flex flex-col items-center gap-3 text-center">
+            <h1 class="text-white uppercase text-9xl font-anton">Alphabet Clash</h1>
             <p class="text-white font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <button
                 class="bg-rose-500 font-semibold text-white border px-14 py-4 rounded-full border-2 border-rose-500 hover:text-rose-500 hover:bg-white  transition mt-10">Play
                 Now</button>
         </div>
-        <div>
+        <div class="hidden">
             <!-- screen -->
             <!-- keyboard start -->
             <div>
-                <button class="btn btn-neutral">Neutral</button>
                 <div class="my-1 flex w-full justify-center gap-1">
                     <kbd class="kbd">q</kbd>
                     <kbd class="kbd">w</kbd>
