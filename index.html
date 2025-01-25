@@ -13,14 +13,14 @@
 <body>
     <div
         class="bg-[#1E1E1E] min-h-screen bg-[url('./images/background.png')] bg-center bg-no-repeat flex flex-col justify-center items-center">
-        <section class="hidden flex flex-col items-center gap-3 text-center">
+        <section id="home-section" class="flex flex-col items-center gap-3 text-center">
             <h1 class="text-white uppercase text-9xl font-anton">Alphabet Clash</h1>
             <p class="text-white font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <button
-                class="bg-rose-500 font-semibold text-white border px-14 py-4 rounded-full border-2 border-rose-500 hover:text-rose-500 hover:bg-white  transition mt-10">Play
+                class="bg-rose-500 font-semibold text-white border px-14 py-4 rounded-full border-2 border-rose-500 hover:text-rose-500 hover:bg-white  transition mt-10" onclick="play()">Play
                 Now</button>
         </section>
-        <section class="">
+        <section id="playground-section" class="hidden">
             <!-- screen -->
             <div
                 class="artboard artboard-horizontal phone-6 border-8 border-[#010313CC] rounded-md bg-[#FFFFFFB3] mb-10 flex justify-center items-center">
@@ -77,7 +77,7 @@
                 </button>
             </div>
         </section>
-        <section class="score hidden">
+        <section id="score-section" class="score hidden">
             <div class="text-center bg-purple-600 p-10 rounded-md font-poppins relative">
                 <div class="z-10 relative">
                     <h2 class="text-5xl text-white mb-5"><b>Score</b> : 14</h2>
@@ -89,6 +89,7 @@
         </section>
     </div>
     <script src="/js/script.js"></script>
+    <script src="/js/utility.js"></script>
 </body>
 
 </html>
